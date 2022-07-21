@@ -1,9 +1,10 @@
 import './App.css';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div className="App">
-      <h1>Vogoban Kripa Koro</h1>
+     <Hero />
     </div>
   );
 }
