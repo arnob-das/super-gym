@@ -12,8 +12,8 @@ const Programs = () => {
                 <span className="stroke-text">To Shape You</span>
             </div>
             <div className="programs-categories">
-                {programsData.map(program => (
-                    <div className="category">
+                {programsData.map((program,i) => (
+                    <div className="category" key={i}>
                         {program.image}
                         <span>{program.heading}</span>
                         <span>{program.details}</span>
