@@ -126,7 +126,7 @@
 }
 
 .herat-rate > span:nth-child(2) {
-  color: var(--gray);
+  color: var(--lightgray);
 }
 
 .heart-rate > :nth-child(3) {
