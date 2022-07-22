@@ -1,6 +1,6 @@
 #SUPER GYM WEBSITE WITH REACT JS.
 
-LIVE SITE[](https://super-gym-arnob.netlify.app/)
+[LIVE SITE](https://super-gym-arnob.netlify.app/)
 
 # Getting Started with Create React App
 
