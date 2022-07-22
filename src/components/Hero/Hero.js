@@ -5,6 +5,7 @@ import hero_image_back from "../../assets/hero_image_back.png"
 import heart from "../../assets/heart.png"
 import calories from "../../assets/calories.png"
 import { motion } from 'framer-motion'
+import NumberCounter from 'number-counter'
 import './Hero.css'
 
 const transition = { type: 'spring', duration: 2 }
@@ -43,7 +44,7 @@ const Hero = () => {
                 <div className="figures">
                     <div>
                         <span>
-                            +140
+                            <NumberCounter start={100} end={140} delay="3" prefix="+"/>
                         </span>
                         <span>
                             expert coaches
@@ -51,7 +52,7 @@ const Hero = () => {
                     </div>
                     <div>
                         <span>
-                            +978
+                        <NumberCounter start={800} end={978} delay="3" prefix="+"/>
                         </span>
                         <span>
                             numbers joined
@@ -59,7 +60,7 @@ const Hero = () => {
                     </div>
                     <div>
                         <span>
-                            +50
+                        <NumberCounter start={10} end={50} delay="3" prefix="+"/>
                         </span>
                         <span>
                             fitness programs
