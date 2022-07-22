@@ -243,4 +243,7 @@
     left: 2rem;
     top: 0rem;
   }
+  .hero-buttons{
+    align-self: center;
+  }
 }
