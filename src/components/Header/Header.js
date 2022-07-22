@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import './Header.css'
 import Logo from '../../assets/logo.png'
 import bars from '../../assets/bars.png'
@@ -34,11 +35,48 @@ const Header = () => {
                     )
                     : (
                         <ul className="header-menu">
-                            <li onClick={() => setMenuOpened(false)}>Home</li>
-                            <li onClick={() => setMenuOpened(false)}>Programs</li>
-                            <li onClick={() => setMenuOpened(false)}>Why Us</li>
-                            <li onClick={() => setMenuOpened(false)}>Plans</li>
-                            <li onClick={() => setMenuOpened(false)}>Testimonials</li>
+                            <li onClick={() => setMenuOpened(false)}>
+                                <Link
+                                    to="hero"
+                                    span="true"
+                                    smooth={true}
+                                    activeClass="actove"
+                                    onClick={() => setMenuOpened(false)}
+                                >Home</Link>
+                            </li>
+                            <li onClick={() => setMenuOpened(false)}>
+                                <Link
+                                    to="programs"
+                                    span="true"
+                                    smooth={true}
+                                    onClick={() => setMenuOpened(false)}
+                                >Programs</Link>
+                            </li>
+                            <li onClick={() => setMenuOpened(false)}>
+                                <Link
+                                    to="reasons"
+                                    span="true"
+                                    smooth={true}
+                                    onClick={() => setMenuOpened(false)}
+                                >Why Us</Link>
+                            </li>
+                            <li onClick={() => setMenuOpened(false)}>
+                                <Link
+                                    to="plans"
+                                    span="true"
+                                    smooth={true}
+                                    onClick={() => setMenuOpened(false)}
+                                >Plans</Link>
+
+                            </li>
+                            <li>
+                                <Link
+                                    to="testimonials"
+                                    span="true"
+                                    smooth={true}
+                                    onClick={() => setMenuOpened(false)}
+                                >Testimonials</Link>
+                            </li>
                         </ul>
                     )
                 }
