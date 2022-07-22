@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import './Hero.css'
 
 const transition = { type: 'spring', duration: 2 }
+const mobile = window.innerWidth <= 768 ? true : false;
 
 const Hero = () => {
     return (
@@ -18,7 +19,7 @@ const Hero = () => {
                 {/* the best ad */}
                 <div className="the-best-ad">
                     <motion.div
-                        initial={{ left: '230px' }}
+                        initial={{ left: mobile ? "165px" : "230px" }}
                         whileInView={{ left: '8px' }}
                         transition={{ ...transition, type: 'linear' }}
                     >
@@ -85,10 +86,10 @@ const Hero = () => {
                 {/* hero images */}
                 <img src={hero_image} alt="" className="hero-image" />
                 <motion.img
-                initial={{ right: '11rem' }}
-                whileInView={{ right: '20rem' }}
-                transition={transition}
-                src={hero_image_back} alt="" className="hero-image-back" />
+                    initial={{ right: '11rem' }}
+                    whileInView={{ right: '20rem' }}
+                    transition={transition}
+                    src={hero_image_back} alt="" className="hero-image-back" />
 
                 {/* calories */}
                 <motion.div className="calories"
