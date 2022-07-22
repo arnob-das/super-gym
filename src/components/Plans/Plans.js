@@ -5,7 +5,7 @@ import './Plans.css'
 
 const Plans = () => {
     return (
-        <div className="plans-container">
+        <div className="plans-container" id="plans">
             <div className="blur plans-blur-1"></div>
             <div className="blur plans-blur-2"></div>
             <div className="programs-header"
@@ -15,7 +15,7 @@ const Plans = () => {
             >
                 <span className="stroke-text">READY TO START</span>
                 <span>YOUR JOURNEY</span>
-                <span className="stroke-text">NOW WITHUS</span>
+                <span className="stroke-text">NOW WITH US</span>
             </div>
             {/* plans cards */}
             <div className="plans">
